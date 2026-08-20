@@ -1,0 +1,38 @@
+{
+  "name": "genpark-autonomous-support-ticket-resolution-action-executor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous customer support ticket triage, knowledge-grounded resolution & transactional action executor.",
+  "author": "genpark",
+  "category": "support",
+  "tags": [
+    "support-agent",
+    "ticket-resolution",
+    "customer-service",
+    "autonomous-helpdesk",
+    "fin-ai"
+  ],
+  "inputs": {
+    "ticket_message": {
+      "type": "string"
+    },
+    "customer_tier": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "resolution_state": {
+      "type": "string"
+    },
+    "executed_action": {
+      "type": "string"
+    },
+    "customer_response_markdown": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
